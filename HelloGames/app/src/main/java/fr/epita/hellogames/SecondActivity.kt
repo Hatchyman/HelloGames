@@ -66,10 +66,10 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
 
     fun updateFields()
     {
-        val textName = findViewById<TextView>(R.id.game_name)
-        val textType = findViewById<TextView>(R.id.game_type)
-        val textNb  = findViewById<TextView>(R.id.game_nb)
-        val textYear = findViewById<TextView>(R.id.game_year)
+        val textName = findViewById<TextView>(R.id.name_value)
+        val textType = findViewById<TextView>(R.id.type_value)
+        val textNb  = findViewById<TextView>(R.id.players_value)
+        val textYear = findViewById<TextView>(R.id.year_value)
         val textDescription = findViewById<TextView>(R.id.description)
         val image = findViewById<ImageView>(R.id.imageGame)
         textName.append(" " + gameInfo[0].name)
