@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.epita.hellogames.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="42dp" />
+    <!-- An horizontal guide in the middle of the screen -->
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_bottom_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="409dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="358dp" />
+    <!-- An horizontal guide in the middle of the screen -->
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_top_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="61dp" />
+
+    <TextView
+        android:layout_width="7dp"
+        android:layout_height="330dp"
+        android:background="#00BFFF"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_top_guide"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_bottom_guide"
+        app:layout_constraintRight_toLeftOf="@id/game2"
+        app:layout_constraintLeft_toRightOf="@id/game1"
+        />
+
+<TextView
+    android:layout_width="330dp"
+    android:layout_height="7dp"
+    android:background="#00BFFF"
+    app:layout_constraintTop_toBottomOf="@id/game1"
+    app:layout_constraintBottom_toTopOf="@id/game3"
+    app:layout_constraintRight_toLeftOf="@id/vertical_right_guide"
+    app:layout_constraintLeft_toRightOf="@id/vertical_left_guide"
+    />
+  <ImageButton
+      android:id="@+id/game1"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintLeft_toRightOf="@id/vertical_left_guide"
+      app:layout_constraintTop_toBottomOf="@id/horizontal_top_guide"
+      app:layout_constraintRight_toLeftOf="@id/game2"
+      app:layout_constraintBottom_toTopOf="@id/game3"
+      />
+
+    <ImageButton
+        android:id="@+id/game2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/game1"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_top_guide"
+        app:layout_constraintBottom_toTopOf="@id/game4"
+        app:layout_constraintRight_toLeftOf="@id/vertical_right_guide"
+        />
+
+    <ImageButton
+        android:id="@+id/game3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/vertical_left_guide"
+        app:layout_constraintTop_toBottomOf="@id/game1"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_bottom_guide"
+        app:layout_constraintRight_toLeftOf="@id/game4"
+        />
+
+    <ImageButton
+        android:id="@+id/game4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/game3"
+        app:layout_constraintTop_toBottomOf="@id/game2"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_bottom_guide"
+        app:layout_constraintRight_toLeftOf="@id/vertical_right_guide"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>
