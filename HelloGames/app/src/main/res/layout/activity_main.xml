@@ -34,25 +34,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="61dp" />
 
-    <TextView
-        android:layout_width="5dp"
-        android:layout_height="0dp"
-        android:background="#00BFFF"
-        app:layout_constraintTop_toBottomOf="@id/horizontal_top_guide"
-        app:layout_constraintBottom_toTopOf="@id/horizontal_bottom_guide"
-        app:layout_constraintRight_toLeftOf="@id/game2"
-        app:layout_constraintLeft_toRightOf="@id/game1"
-        />
-
-<TextView
-    android:layout_width="0dp"
-    android:layout_height="5dp"
-    android:background="#00BFFF"
-    app:layout_constraintTop_toBottomOf="@id/game1"
-    app:layout_constraintBottom_toTopOf="@id/game3"
-    app:layout_constraintRight_toLeftOf="@id/vertical_right_guide"
-    app:layout_constraintLeft_toRightOf="@id/vertical_left_guide"
-    />
 
   <ImageButton
       android:id="@+id/game1"
@@ -95,5 +76,24 @@
 
         />
 
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="#00BFFF"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_top_guide"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_bottom_guide"
+        app:layout_constraintRight_toLeftOf="@id/game4"
+        app:layout_constraintLeft_toRightOf="@id/game3"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="#00BFFF"
+        app:layout_constraintTop_toBottomOf="@id/game2"
+        app:layout_constraintBottom_toTopOf="@id/game4"
+        app:layout_constraintRight_toLeftOf="@id/vertical_right_guide"
+        app:layout_constraintLeft_toRightOf="@id/vertical_left_guide"
+        />
 
 </android.support.constraint.ConstraintLayout>
