@@ -91,7 +91,7 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
             3 -> imageView.setImageResource(R.drawable.sudoku)
             4 -> imageView.setImageResource(R.drawable.battleship)
             5 -> imageView.setImageResource(R.drawable.minesweeper)
-            6 -> imageView.setImageResource(R.drawable.conways_game_of_life)
+            6 -> imageView.setImageResource(R.drawable.game_of_life)
             7 -> imageView.setImageResource(R.drawable.memory)
             8 -> imageView.setImageResource(R.drawable.simon)
             9 -> imageView.setImageResource(R.drawable.jigsaw)

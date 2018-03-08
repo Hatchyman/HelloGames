@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             3 -> imageButton.setImageResource(R.drawable.sudoku)
             4 -> imageButton.setImageResource(R.drawable.battleship)
             5 -> imageButton.setImageResource(R.drawable.minesweeper)
-            6 -> imageButton.setImageResource(R.drawable.conways_game_of_life)
+            6 -> imageButton.setImageResource(R.drawable.game_of_life)
             7 -> imageButton.setImageResource(R.drawable.memory)
             8 -> imageButton.setImageResource(R.drawable.simon)
             9 -> imageButton.setImageResource(R.drawable.jigsaw)
